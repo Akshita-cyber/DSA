@@ -21,11 +21,35 @@ public class recursions {
         System.out.println(N);
         printNto1(N-1);
     }
+    static int sum(int i,int N) {
+        if (i > N) {
+            return 0;
+        }
+        return i+ sum(i+1, N);
+    }
+
+    //parametrized way of calculating sum
+    static void calcSumParametrizedWay(int n, int sum) {
+        if (n < 1) {
+            System.out.println(sum);
+            return;
+        }
+        calcSumParametrizedWay(n-1, sum + n);
+    }
+    static int calcSumFuncRecur(int n){
+        if(n==0){
+            return 0;
+        }
+        return n +calcSumFuncRecur(n-1);
+
+    }
     public static void main(String[] args) {
 
         //print1toN();
         //printName("Akshita",5);
-        printNto1(10);
+        //printNto1(10);
+        //sum(1,10);
+        calcSumParametrizedWay(4,0);
 
     }
 }
