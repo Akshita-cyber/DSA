@@ -48,6 +48,17 @@ public class recursions {
             return 1;
         }
         return n * fact(n-1);
+    }
+
+    static int[] reverseArr(int[] arr, int size, int i){
+        if (i>size){
+            return arr;
+        }
+        int temp=arr[i];
+        arr[i]=arr[size-1];
+        arr[size-1]=temp;
+
+        return reverseArr(arr,size-1,i+1);
 
     }
     public static void main(String[] args) {
@@ -59,6 +70,12 @@ public class recursions {
         //calcSumParametrizedWay(4,0);
         //System.out.println(calcSumFuncRecur(4));
         //System.out.println(fact(5));
+        // REVERSING AN ARRAY
+        int [] array ={1, 2, 3, 4, 5};
+        reverseArr(array,5,0);
+        for ( int num : array){
+            System.out.print(" "+ num);
+        }
 
 
     }
