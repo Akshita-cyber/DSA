@@ -36,11 +36,18 @@ public class recursions {
         }
         calcSumParametrizedWay(n-1, sum + n);
     }
-    static int calcSumFuncRecur(int n){
+    static int calcSumFuncRecur(int n){//calculating sum using functional recursion
         if(n==0){
             return 0;
         }
         return n +calcSumFuncRecur(n-1);
+
+    }
+    static int fact(int n){
+        if (n<1){
+            return 1;
+        }
+        return n * fact(n-1);
 
     }
     public static void main(String[] args) {
@@ -49,7 +56,10 @@ public class recursions {
         //printName("Akshita",5);
         //printNto1(10);
         //sum(1,10);
-        calcSumParametrizedWay(4,0);
+        //calcSumParametrizedWay(4,0);
+        //System.out.println(calcSumFuncRecur(4));
+        //System.out.println(fact(5));
+
 
     }
 }
