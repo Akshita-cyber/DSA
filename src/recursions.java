@@ -61,6 +61,16 @@ public class recursions {
         return reverseArr(arr,size-1,i+1);
 
     }
+    static boolean isPalindrome(String s, int i, int j){
+        if (i>j){
+            return true;
+        }
+        if (s.charAt(i)!=s.charAt(j)){
+            return false;
+        }
+        return isPalindrome(s,i+1,j-1);
+    }
+
     public static void main(String[] args) {
 
         //print1toN();
@@ -72,10 +82,11 @@ public class recursions {
         //System.out.println(fact(5));
         // REVERSING AN ARRAY
         int [] array ={1, 2, 3, 4, 5};
-        reverseArr(array,5,0);
-        for ( int num : array){
-            System.out.print(" "+ num);
-        }
+        //reverseArr(array,5,0);
+        //for ( int num : array){
+        //    System.out.print(" "+ num);
+        //}
+        System.out.println(isPalindrome("akshita",0,4));
 
 
     }
