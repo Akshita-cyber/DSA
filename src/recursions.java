@@ -71,6 +71,20 @@ public class recursions {
         return isPalindrome(s,i+1,j-1);
     }
 
+    static int fib(int n){// this function will just print the nth fibbonacci
+        if (n<=1)
+            return n;
+        return fib(n-1)+fib(n-2);
+
+    }
+
+   static void printFib(int a, int b, int n){// this func will print the entire fibonacci series
+        if (n==0) return;
+        int c = a+b;
+       System.out.print(c+", ");
+       printFib(b,c,n-1);
+   }
+
     public static void main(String[] args) {
 
         //print1toN();
@@ -86,7 +100,24 @@ public class recursions {
         //for ( int num : array){
         //    System.out.print(" "+ num);
         //}
-        System.out.println(isPalindrome("akshita",0,4));
+        //System.out.println(isPalindrome("akshita",0,4));
+        //System.out.println(fib(5));
+        //here is how the fib func looks like
+//        fib(0) → 0
+//
+//        fib(1) → 1
+//
+//        fib(2) → 1
+//
+//        fib(3) → 2
+//
+//        fib(4) → 3
+//
+//        fib(5) → 5
+//
+//        fib(6) → 8
+        System.out.print("0, 1, ");
+        printFib(0,1,5);
 
 
     }
