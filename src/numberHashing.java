@@ -1,5 +1,5 @@
 import java.util.*;
-public class hashing {
+public class numberHashing {
     public static void main(String[] args) {
         int n;
         System.out.println("Input size of arrays");
@@ -11,6 +11,7 @@ public class hashing {
             arr[i]=sc.nextInt();
         }
 
+        //precompute
         int [] hash =new int[13];// hash array
         for (int i=0;i<n;i++) {
             hash[arr[i]]+=1;
