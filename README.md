@@ -3,7 +3,7 @@ This repo contains my solutions to DSA problems from **Striver's playlist**.
 I am learning and practicing DSA almost from scratch.
 
 ## Current progress:
-- Completed: Arrays, Strings, Recursion  
+- Completed: Basic Java, Patters, Recursion  
 - Currently learning: Hashing  
 - Up next: Sorting algorithms
 - 
