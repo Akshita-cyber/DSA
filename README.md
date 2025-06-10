@@ -3,8 +3,8 @@ This repo contains my solutions to DSA problems from **Striver's playlist**.
 I am learning and practicing DSA almost from scratch.
 
 ## Current progress:
-- Completed: Arrays and Strings  
-- Currently learning: Recursion  
+- Completed: Arrays, Strings, Recursion  
+- Currently learning: Hashing  
 - Up next: Sorting algorithms
 - 
 ## Why this repo?
