@@ -3,9 +3,10 @@ import java.util.*;
 public class merge_sort {
     static void mergeSort(int[] arr, int low, int high){
         if (low>=high) return;
-        int mid=low+high;
+        int mid=(low+high)/2;
         mergeSort(arr,low,mid);//left half
         mergeSort(arr,mid+1,high);//right half
+
         merge(arr,low,mid,high);//merge
     }
     static void merge(int [] arr, int low, int mid, int high){
@@ -24,11 +25,11 @@ public class merge_sort {
                 right++;
             }
         }
-        if(left<=mid){
+        while(left<=mid){
             temp.add(arr[left]);
             left++;
         }
-        if (right<=high){
+        while (right<=high){
             temp.add(arr[right]);
             right++;
         }
