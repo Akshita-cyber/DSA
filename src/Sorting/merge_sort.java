@@ -1,7 +1,7 @@
 package Sorting;
 import java.util.*;
 public class merge_sort {
-    static void mergeSort(int[] arr, int low, int high){
+    static void mergeSort(int[] arr, int low, int high){//dividing
         if (low>=high) return;
         int mid=(low+high)/2;
         mergeSort(arr,low,mid);//left half
