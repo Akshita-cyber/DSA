@@ -25,12 +25,12 @@ public class moveZerosToEnd {
 
 
     public static void main(String[] args) {
-        int nums[]={1 ,0 ,2 ,3 ,0 ,4 ,0 ,1};
-
-        for (int i=0;i<8;i++){
+        int nums[]={0,1,0,3,12};
+        int n=nums.length;
+        for (int i=0;i<n;i++){
             System.out.print(nums[i]+" ");
         }
         System.out.println();
-        moveZeros(nums,8);
+        moveZeros(nums,n);
     }
 }
